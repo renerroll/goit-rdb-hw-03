@@ -11,14 +11,12 @@ select name, phone from shippers;
 
 ## 2. 
 ```sql
-select * from products;
 SELECT round(avg(price), 2), max(price), min(price) from products;
 ```
 ![SQL command2](2.png)
 
 ## 3
 ``` sql
-select * from products;
 SELECT DISTINCT category_id, price from products
 ORDER BY price DESC
 LIMIT 10; 
@@ -28,7 +26,6 @@ LIMIT 10;
 
 -- 4
 ```sql
-select * from products;
 SELECT count(*)
 from products
 WHERE price between 20 and 100;
@@ -37,7 +34,6 @@ WHERE price between 20 and 100;
 
 -- 5
 ```sql
-select * from products;
 SELECT count(*), round(avg(price), 2), supplier_id
 FROM products
 GROUP BY supplier_id;
